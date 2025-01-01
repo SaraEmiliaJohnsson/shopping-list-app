@@ -1,4 +1,3 @@
-
 export type ShoppingItem = {
   id: number;
   name: string;
@@ -6,10 +5,10 @@ export type ShoppingItem = {
   purchased: boolean;
 };
 
-export const addItem = (
+const addItem = (
   items: ShoppingItem[],
   name: string,
-  quantity: number,
+  quantity: number
 ): ShoppingItem[] => {
   const newItem: ShoppingItem = {
     id: Date.now(),
@@ -20,11 +19,14 @@ export const addItem = (
   return [...items, newItem];
 };
 
-export const toggleItemPurchased = (
+const toggleItemPurchased = (
   items: ShoppingItem[],
   id: number
 ): ShoppingItem[] => {
   return items.map((item) =>
-    item.id === id ? { ...item, purchased: item.purchased } : item
+    item.id === id ? { ...item, purchased: !item.purchased } : item
   );
 };
+
+
+export default { addItem, toggleItemPurchased };
