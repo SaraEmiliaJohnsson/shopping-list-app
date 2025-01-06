@@ -4,7 +4,6 @@ import ShoppingList from "./components/ShoppingList";
 export default function ShoppingListPage() {
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.title}>My Shopping List</Text>
       <ShoppingList />
     </SafeAreaView>
   );
