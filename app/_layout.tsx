@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     borderRadius: 5,
-    backgroundColor: "#4682B4", // Mellanblå för knappar
+    backgroundColor: "#64B5F6", // Mellanblå för knappar
   },
   menuText: {
     fontSize: 16,
